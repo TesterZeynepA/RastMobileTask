@@ -1,9 +1,14 @@
+
+@paymentTest
 Feature: Payment Process
 
+  #positive Scenario
   Scenario: Successful payment
     Given the user has a valid credit card
     When the user attempts to process a payment
     Then the payment should be successful
+
+    #negative Scenarios
 
   Scenario: Payment with invalid credit card
     Given the user has an invalid credit card
